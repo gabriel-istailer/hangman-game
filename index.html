@@ -6,12 +6,50 @@
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=videogame_asset" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Play Hangman online for free. Guess words, improve your vocabulary, and have fun with different categories and challenges.">
     <title>Hangman Game</title>
 </head>
-<body>
-    
+<body class="df-body">
+    <header class="df-header">
+        <nav>
+            <h1 class="title">
+                <a href="index.html" class="link-no-style">
+                    Hangman Game!
+                </a>
+            </h1>
+        </nav>
+    </header>
+    <main class="df-main center-main">
+        <section class="menu">
+            <div class="btns-group-col">
+                <a class="df-btn lg-btn link-no-style" href="./game/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-icon lucide-gamepad"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+                    Play
+                </a>
+                <a class="df-btn lg-btn link-no-style" href="./words/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-a-icon lucide-book-a"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><path d="m8 13 4-7 4 7"/><path d="M9.1 11h5.7"/></svg>
+                    Words
+                </a>
+                <a class="df-btn lg-btn link-no-style" href="./rules/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale-icon lucide-scale"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></svg>
+                    Rules
+                </a>
+            </div>
+            <div class="input-group">
+                <label class="df-label lg-label" for="gameDifficulty">Difficulty:</label>
+                <select class="df-input lg-input text-center" name="gameDifficulty" id="gameDifficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <footer class="df-footer">
+        <h3>Developed by <a class="link-no-style" href="https://github.com/gabriel-istailer" target="_blank"><u>Gabriel Istailer</u></a></h3>
+    </footer>
 </body>
 </html>
